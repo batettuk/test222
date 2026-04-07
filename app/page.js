@@ -1,6 +1,6 @@
 "use client";
 
-import Card from "./components/card/page";
+import Card from "./components/card/Card";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect } from "react";
@@ -17,6 +17,7 @@ export default function Home() {
     };
     fetchProducts();
   }, []);
+
   const filteredProducts = products.filter((product) =>
     product.title.toLowerCase().includes(search.toLowerCase()),
   );
