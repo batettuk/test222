@@ -1,5 +1,5 @@
 "use client";
-import Card from "./components/card/page";
+import Card from "./components/card";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect } from "react";
